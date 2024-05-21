@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo/1.png" alt="Logo">
+        </div>
+        <div class="order">
+            <a href="index.html">
+                <img src="./images/icons/home.png" alt="">
+            </a>
+            <a href="order.html">
+                <img src="./images/icons/order.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/icons/become a marketer 2.png" alt="">
+            </a>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="./images/banner/banner.gif" alt="">
+    </div>
+    <h3>Become a marketer</h3>
+    <form action="https://script.google.com/macros/s/AKfycbwaWl3x-GRcsxdOSndq1DHNccWJIFWKvzhhTvSEv7DouDjVV1WflsCIw2sg_nj-Lt7H-Q/exec" method="post">
+        <label for="name">Your Name</label>
+        <input type="name" name="userName" placeholder="e.g: Jennifer">
+        <label for="name">Your LastName</label>
+        <input type="name" name="userLastName" placeholder="e.g: Doe">
+        <label for="phone">Your Phone</label>
+        <input type="Phone" name="userPhone" placeholder="e.g: +213 749354658">
+        <label for="email">Your Email</label>
+        <input type="email" name="userEmail" placeholder="e.g: johndoe@example.com">
+        <button type="submit">Send Request</button>
+    </form>
+
+    <h3>See the explanatory video</h3>
+    <div class="vidframe">
+        <div class="frame" id="frame">
+            <img src="./vid/cover.png" alt="Frame Image" id="frame-img" onclick="playVideo()">
+            <video controls id="video" style="display: none;">
+                <source src="./vid/Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

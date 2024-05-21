@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo/1.png" alt="Logo">
+        </div>
+        <div class="order">
+            <a href="index.html">
+                <img src="./images/icons/home.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/icons/order 2.png" alt="">
+            </a>
+            <a href="mrktr.html">
+                <img src="./images/icons/become a marketer.png" alt="">
+            </a>
+        </div>
+    </header>
+    <h3>Make an order</h3>
+    <form action="https://script.google.com/macros/s/AKfycbw5t9YRi-E1lLwTWaPjkIVXDv5rid5y3WngTmC3elwC7kSEsHVRzaDnt_6ypg6O_tgmdw/exec" method="post">
+        <label for="text">Your Code</label>
+        <input type="text" name="userCode" placeholder="e.g: TJ2024JD01">
+        <br><br>
+        <br><br>
+        <label for="name">Client Name</label>
+        <input type="name" name="clientName" placeholder="e.g: Jennifer Doe">
+        <label for="phone">Client Phone</label>
+        <input type="Phone" name="clientPhone" placeholder="e.g: +213 749354658">
+        <label for="email">Client Email</label>
+        <input type="email" name="clientEmail" placeholder="e.g: johndoe@example.com">
+        <label for="category">The Order Content</label>
+        <select type="text" id="branche" name="orderContent">
+            <optgroup label="Programming & Tech">
+                <option value="Mobile App Development">Mobile App Development</option>
+                <option value="Website Development">Website Development</option>
+            </optgroup>
+            <optgroup label="Graphics & Design">
+                <option value="Logo Design">Logo Design</option>
+                <option value="Branding">Branding</option>
+            </optgroup>
+            <optgroup label="Digital Marketing">
+                <option value="SEO">SEO</option>
+                <option value="Social Media Marketing">Social Media Marketing</option>
+            </optgroup>
+        </select>
+        <button type="submit">Send Order</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
